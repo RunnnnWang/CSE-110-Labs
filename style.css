@@ -1,0 +1,149 @@
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+.Section1 {
+    display: inline-block;
+    width: 100%;
+    background-color: rgb(245, 240, 230);
+    /* font-size: 24px;  */
+    /* padding: 10px; */
+    
+  }
+
+.Section1 p {
+    font-size: 24px;
+}
+
+.Section2 {
+    display: inline-block; 
+    width: 100%;
+    color: rgb(255, 255, 255);
+    background-image: url("https://www.ucsd.edu/_resources/img/bg-orbs-1.jpg");
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+.Section2 p {
+    font-size: 24px;
+}
+
+.Section3 {
+    display: inline-block;
+    width: 100%;
+    background-color: rgb(245, 240, 230);
+}
+
+ul {
+    position: sticky;
+    background-color: #ffffff;
+    top: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+  }
+
+
+ul::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+li {
+    float: left;
+  }
+
+li a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 28px; 
+}
+
+li a:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(24, 43, 73);
+  }
+
+.navbar {
+    display: inline-block; 
+    width: 100%;
+    align-items: center; 
+    background-color: #ffffff;
+    position: sticky;
+    top: 0;
+    gap: 25px;
+    z-index: 1000;
+}
+
+
+.logo {
+    max-width: 400px; 
+}
+
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    padding: 25px;
+    grid-auto-rows: minmax(100px, auto);
+    background-color: rgb(245, 240, 230);
+    color: white;
+    text-align: center; 
+
+}
+
+.one {
+    grid-column: 1 ;
+    grid-row: 1;
+    text-align: left; 
+    font-size: 24px; 
+    line-height: 1.5;
+    max-height: 500px; 
+    overflow-y: auto; 
+    background-color: #182b49;
+  }
+
+.two {
+    grid-column: 2;
+    grid-row: 1;
+    text-align: left; 
+    font-size: 24px; 
+    line-height: 1.5;
+    max-height: 500px; 
+    overflow-y: auto; 
+    background-color: #182b49;
+}
+
+.three {
+    grid-column: 3;
+    grid-row: 1;
+    text-align: left; 
+    font-size: 24px; 
+    line-height: 1.5;
+    max-height: 500px; 
+    overflow-y: auto; 
+    background-color: #182b49;
+}
+
+.four {
+    grid-column: 4;
+    grid-row: 1;
+    text-align: left; 
+    font-size: 24px; 
+    line-height: 1.5;
+    max-height: 500px; 
+    overflow-y: auto;
+    background-color: #182b49; 
+  }
+
+
+
