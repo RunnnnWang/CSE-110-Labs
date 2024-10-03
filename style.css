@@ -1,19 +1,17 @@
 html, body {
-    height: 100%;
-    width: 100%;
+    margin: 0%;
 }
 
 .Section1 {
     display: inline-block;
     width: 100%;
     background-color: rgb(245, 240, 230);
-    /* font-size: 24px;  */
-    /* padding: 10px; */
+    scroll-margin-top: 144px;
     
   }
 
 .Section1 p {
-    font-size: 24px;
+    font-size: 28px;
 }
 
 .Section2 {
@@ -21,29 +19,51 @@ html, body {
     width: 100%;
     color: rgb(255, 255, 255);
     background-image: url("https://www.ucsd.edu/_resources/img/bg-orbs-1.jpg");
-    background-size: cover; 
     background-position: center; 
-    background-repeat: no-repeat;
+    scroll-margin-top: 144px;
 }
 
 .Section2 p {
-    font-size: 24px;
+    font-size: 28px;
 }
 
 .Section3 {
     display: inline-block;
     width: 100%;
     background-color: rgb(245, 240, 230);
+    scroll-margin-top: 144px;
+    /* font-size: 24px;  */
 }
 
-ul {
+.Section3 p {
+    font-size: 28px;
+}
+
+.Section1 img, .Section2 img {
+    max-width: 100%;  
+    height: auto;   
+}
+
+
+.navbar {
     position: sticky;
-    background-color: #ffffff;
     top: 0;
+    z-index: 100000;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+.navbar img {
+    max-width: 400px;
+}
+
+
+
+ul {
+    background-color: #ffffff;
     list-style-type: none;
     margin: 0;
     padding: 0;
-    
   }
 
 
@@ -61,7 +81,6 @@ li {
 li a {
     display: block;
     color: rgb(0, 0, 0);
-    text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 28px; 
@@ -72,21 +91,7 @@ li a:hover {
     background-color: rgb(24, 43, 73);
   }
 
-.navbar {
-    display: inline-block; 
-    width: 100%;
-    align-items: center; 
-    background-color: #ffffff;
-    position: sticky;
-    top: 0;
-    gap: 25px;
-    z-index: 1000;
-}
 
-
-.logo {
-    max-width: 400px; 
-}
 
 
 .wrapper {
@@ -101,49 +106,39 @@ li a:hover {
 
 }
 
-.one {
-    grid-column: 1 ;
-    grid-row: 1;
-    text-align: left; 
-    font-size: 24px; 
-    line-height: 1.5;
-    max-height: 500px; 
-    overflow-y: auto; 
+.one, .two, .three, .four {
     background-color: #182b49;
-  }
-
-.two {
-    grid-column: 2;
-    grid-row: 1;
-    text-align: left; 
-    font-size: 24px; 
-    line-height: 1.5;
-    max-height: 500px; 
-    overflow-y: auto; 
-    background-color: #182b49;
-}
-
-.three {
-    grid-column: 3;
-    grid-row: 1;
-    text-align: left; 
-    font-size: 24px; 
-    line-height: 1.5;
-    max-height: 500px; 
-    overflow-y: auto; 
-    background-color: #182b49;
-}
-
-.four {
-    grid-column: 4;
-    grid-row: 1;
-    text-align: left; 
-    font-size: 24px; 
-    line-height: 1.5;
-    max-height: 500px; 
+    color: white;
+    font-size: 28px;
+    padding: 20px;
+    max-height: 500px;
     overflow-y: auto;
-    background-color: #182b49; 
-  }
+    line-height: 1.5;
+    text-align: left;
+}
 
+
+@media (max-width: 800px) {
+    li a {
+        display: none;
+    }
+    .navbar img {
+        max-width: 75%;     
+        height: auto;    
+    }
+
+    h1 {
+        font-size: 24px !important; 
+    }
+
+    p {
+        font-size: 20px !important;
+    }
+
+    .wrapper {
+        grid-template-columns: repeat(2, 1fr); 
+        font-size: 20px !important;
+    }
+}
 
 
