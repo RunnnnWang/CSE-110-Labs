@@ -1,0 +1,19 @@
+
+/* .centered-box {
+    margin: 0 auto;
+
+
+}
+
+
+label {
+    display: block;
+  }
+  input,
+  label {
+    margin: 0.4rem 0;
+  } */
+  
+  input::placeholder {
+    color: black;
+}
